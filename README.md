@@ -16,14 +16,20 @@ NOTE: Options can be passed also as environment variables
 
 ## HELO
 To check if application is working
-> curl "http://<IP>:<PORT>/"
+
+Curl Example:
+> curl "http://localhost:4567/"
 
 ## EXEC SHELL COMMAND 
 Run a shell command on the host machine (like ssh command)
+
+Curl Example:
 > curl -X POST "http://localhost:4567/shell/exec" --data-urlencode "cmd=mkdir /tmp/mydir"
 
 ## COPY 
 Run a copy file from client to server. (like scp command)
-> curl "http://<IP>:<PORT>/shell/copy" -F "file=@local/file/path/myfile.example" -F "path=/dest/path/filename.example"
+
+Curl Example:
+> curl "http://localhost:4567/shell/copy" -F "file=@local/file/path/myfile.example" -F "path=/dest/path/filename.example"
 
 NOTE: like scp destination path must exists
