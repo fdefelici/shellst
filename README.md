@@ -1,4 +1,4 @@
-# SHELLST [![Build Status](https://travis-ci.org/fdefelici/travis-maven-try.svg?branch=master)](https://travis-ci.org/fdefelici/travis-maven-try)
+# SHELLST [![Build Status](https://travis-ci.org/fdefelici/shellst.svg?branch=master)](https://travis-ci.org/fdefelici/shellst)
 Shellst allow you to access your server shell by rest api. Useful in case you can't access remotly your server by ssh.
 
 Both Windows (cmd) and Unix (sh) shell are supported. 
