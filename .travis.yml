@@ -1,0 +1,12 @@
+language: java
+deploy:
+  provider: releases
+  api_key:
+    secure: s8wnFpaq0znO8m/6BD5h0oG/d0VT7Co2K+OpiBuAcgH1dsZkg16W4qAGHeedR71DeWJh0eAxE5q2QfWmC6VO9T+MfhJCtQ5FKDeFwT5aQPfLtrnvtlNk4bQ057SDa7BG36Xn6eqJXk9gM/cxjaG6NIwbCR5o4Aa7J0/VkdOK1sXFPDqLYXokahT2WqfCvESybA2S+c7uRDh6C80h21NJS62D4dZ7O8S1UIJ2EQTyyIo88YNzl44Zx3NplJtZTYzEAOSK5H8d6YBevA0aNE4EiWO2e6zdWsDu4b1apM9FaAQBVYfSibkB7JCppf5bL3g6GvmMfSYlVX8MAL7WA3xEemONDSlv5YBr4hR2qIYZNIXeRY0EDeU+LfR6qbqhHOjbbeiWRT+9RByw+fjv5Zyiv49Yzd0swPNNRUVhU78pWA7zcdMFp7PK55Q7+3+q3nM/Ec3d5MbCmmVzXFd4KgIrYjxPO9m2sfgpQNQgxc2my0RycHKhuJ5GXJLI6eD2+ArTia51NXeqNtQGCuKE1p8RRkpTo1BSj/8sq1ctgDvUm6A4ss/MYeTR+iWhl/r2gWrO+xopskezkgEtHjjjVCpFDOEy5phyYu+vv9o7aFYqCypkzH8BICnmMV+ehbdpFxsn2e+Ug8sCDqi2p/r5luWxxeuTHE4RGyDPzJPYBIkyiJI=
+  file_glob: true
+  file: target/shellst-*.jar
+  skip_cleanup: true
+  on:
+    repo: fdefelici/shellst
+    tags: true
+  

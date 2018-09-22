@@ -1,0 +1,7 @@
+.settings
+.project
+.classpath
+target/
+dependency-reduced-pom.xml
+logPath_IS_UNDEFINED/
+run.bat
